@@ -7,7 +7,7 @@ namespace WorldWarGeneralsGame.Units.Persons
     {
         public Soldier()
         {
-            Weapons.Add(new ClashGun());
+            Weapons.Add(new KalashnikovGun());
             Components.Add(new HumanHealth());
         }
     }

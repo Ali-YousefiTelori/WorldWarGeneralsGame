@@ -5,9 +5,9 @@ using WorldWarGeneralsGame.Interfaces;
 
 namespace WorldWarGeneralsGame.Components.Healths
 {
-    public class TankHealth : IHealth
+    public class TankHealth : HealthBase
     {
-        public int Calculate()
+        public override int Calculate()
         {
             return 15000;
         }

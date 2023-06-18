@@ -51,9 +51,9 @@ namespace WorldWarGeneralsGame.Components.Damages
                 await SemaphoreSlim.WaitAsync();
                 Bullets -= DecreasePerShoot;
                 if (Bullets < 0)
-                    return DecreasePerShoot + Bullets;
+                    return (DecreasePerShoot + Bullets) * DamagePerHit;
                 else
-                    return DecreasePerShoot;
+                    return DecreasePerShoot * DamagePerHit;
             }
             finally
             {

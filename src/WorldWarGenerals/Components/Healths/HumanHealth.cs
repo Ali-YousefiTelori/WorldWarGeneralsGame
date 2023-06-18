@@ -2,9 +2,9 @@
 
 namespace WorldWarGeneralsGame.Components.Healths
 {
-    public class HumanHealth : IHealth
+    public class HumanHealth : HealthBase
     {
-        public int Calculate()
+        public override int Calculate()
         {
             return 1000;
         }

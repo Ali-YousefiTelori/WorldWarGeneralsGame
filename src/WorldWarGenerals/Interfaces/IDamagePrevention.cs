@@ -4,8 +4,8 @@ using System.Text;
 
 namespace WorldWarGeneralsGame.Interfaces
 {
-    public interface IDamage : IComponent
+    public interface IDamagePrevention : IComponent
     {
-
+        public int CalculateDamage(int amount);
     }
 }
